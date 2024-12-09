@@ -10,9 +10,10 @@ import Profile from "./components/pages/Profile";
 import Leaderboard from "./components/pages/Leaderboard";
 import ErrorPage from "./components/pages/ErrorPage";
 import Dashboard from "./components/pages/Dashboard";
-import Challenges from "./components/pages/Challenges"; // Import Challenges component
-import UserCQ from "./components/pages/UserCQ"; // Import UserCQ component
-import ChallengeDetails from "./components/pages/ChallengeDetails"; // Import ChallengeDetails component
+import Challenges from "./components/pages/Challenges";
+import UserCQ from "./components/pages/UserCQ";
+import ChallengeDetails from "./components/pages/ChallengeDetails";
+import Compiler from "./components/pages/Compiler";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
@@ -29,6 +30,18 @@ const App = () => {
     const token = localStorage.getItem("token");
     const role = localStorage.getItem("role"); // Retrieve role from localStorage
     return token ? role : null;
+  };
+
+  // Route handler for the root path "/"
+  const RootRoute = () => {
+    const role = getUserRole();
+    if (role === "admin") {
+      return <Navigate to="/adminmain" />;
+    } else if (role === "user") {
+      return <Navigate to="/home" />;
+    } else {
+      return <Navigate to="/login" />;
+    }
   };
 
   // Private Route for role-based routing
@@ -55,6 +68,9 @@ const App = () => {
   return (
     <Router>
       <Routes>
+        {/* Root Route */}
+        <Route path="/" element={<RootRoute />} />
+
         {/* Public Routes */}
         <Route
           path="/login"
@@ -128,6 +144,7 @@ const App = () => {
             <PrivateRoute allowedRoles={["user"]}>
               <Layout>
                 <ChallengeDetails />
+                <Compiler /> {/* Compiler integrated below ChallengeDetails */}
               </Layout>
             </PrivateRoute>
           }
