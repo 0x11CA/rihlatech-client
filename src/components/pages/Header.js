@@ -80,7 +80,7 @@ const Header = () => {
               <NavLink href="/courses">Courses</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/my-learning">My Learning</NavLink>
+              <NavLink href="/my-learning/questions">My Learning</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/leaderboard">Leaderboard</NavLink>
