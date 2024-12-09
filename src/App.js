@@ -13,7 +13,6 @@ import Dashboard from "./components/pages/Dashboard";
 import Challenges from "./components/pages/Challenges";
 import UserCQ from "./components/pages/UserCQ";
 import ChallengeDetails from "./components/pages/ChallengeDetails";
-import Compiler from "./components/pages/Compiler";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
@@ -144,7 +143,6 @@ const App = () => {
             <PrivateRoute allowedRoles={["user"]}>
               <Layout>
                 <ChallengeDetails />
-                <Compiler /> {/* Compiler integrated below ChallengeDetails */}
               </Layout>
             </PrivateRoute>
           }
