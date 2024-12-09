@@ -205,8 +205,7 @@ const Profile = () => {
                 >
                   Update Profile
                 </Button>
-              </Form>
-              <Button
+                <Button
                 className="btn-action"
                 color="danger"
                 block
@@ -214,6 +213,7 @@ const Profile = () => {
               >
                 Reset Password
               </Button>
+              </Form>
 
               {showPasswordFields && (
                 <Form onSubmit={handleResetPassword} className="mt-3">
