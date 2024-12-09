@@ -62,42 +62,28 @@ const Header = () => {
         {role === "admin" ? (
           <>
             <NavItem>
-              <NavLink onClick={() => navigate("/adminmain")} style={{ cursor: "pointer" }}>
-                Home
-              </NavLink>
+              <NavLink href="/adminmain">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink onClick={() => navigate("/dashboard")} style={{ cursor: "pointer" }}>
-                Dashboard
-              </NavLink>
+              <NavLink href="/dashboard">Dashboard</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink onClick={() => navigate("/leaderboard")} style={{ cursor: "pointer" }}>
-                Leaderboard
-              </NavLink>
+              <NavLink href="/leaderboard">Leaderboard</NavLink>
             </NavItem>
           </>
         ) : (
           <>
             <NavItem>
-              <NavLink onClick={() => navigate("/home")} style={{ cursor: "pointer" }}>
-                Home
-              </NavLink>
+              <NavLink href="/home">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink onClick={() => navigate("/courses")} style={{ cursor: "pointer" }}>
-                Courses
-              </NavLink>
+              <NavLink href="/courses">Courses</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink onClick={() => navigate("/my-learning/questions")} style={{ cursor: "pointer" }}>
-                My Learning
-              </NavLink>
+              <NavLink href="/my-learning/questions">My Learning</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink onClick={() => navigate("/leaderboard")} style={{ cursor: "pointer" }}>
-                Leaderboard
-              </NavLink>
+              <NavLink href="/leaderboard">Leaderboard</NavLink>
             </NavItem>
           </>
         )}
@@ -113,7 +99,10 @@ const Header = () => {
             }
             alt="User Avatar"
             className="rounded-circle user-avatar"
+            style={{ height: "50px", width: "50px" }} // Adjusted height and width
           />
+
+
           <span className="user-info">
             Hi, {userName || "User"} {/* Display fetched name */}
             <br />
