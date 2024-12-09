@@ -62,14 +62,6 @@
     color: white;
   }
   
-  .user-avatar {
-    width: 40px; /* Fixed width */
-    height: 40px; /* Fixed height */
-    border-radius: 50%; /* Circular shape */
-    object-fit: cover; /* Maintain aspect ratio and fill */
-    border: 2px solid white; /* Optional: Add a white border for clarity */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Optional: Add shadow for style */
-  }
   
   
   .user-info {
