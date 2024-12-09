@@ -1,0 +1,95 @@
+/* Sidebar */
+.sidebar {
+    background-color: #001d4f;
+    color: white;
+    padding: 20px;
+    min-height: 100vh;
+    width: 250px;
+  }
+  
+  .sidebar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Sidebar */
+.sidebar-menu li {
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .sidebar-menu li:hover {
+    background-color: #ffc107;
+    color: #001d4f;
+  }
+  
+  /* Main Content */
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .course-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Main Content */
+  .dashboard-content {
+    margin-left: 260px;
+    padding: 20px;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    margin-right: 10px;
+    padding: 5px 10px;
+  }
+  
+  .category-select {
+    padding: 5px 10px;
+  }
+  
+  .course-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .question-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .question-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .manage-link {
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+  }
+  

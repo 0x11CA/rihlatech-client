@@ -1,0 +1,51 @@
+.user-questions-page {
+    margin-top: 20px;
+  }
+  
+  .questions-table {
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .questions-table th {
+    background-color: #001d4f;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .questions-table td {
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .badge-success {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .badge-warning {
+    background-color: #ffc107;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .badge-danger {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .pagination-controls {
+    margin-top: 20px;
+  }
+  
+  .pagination-controls button {
+    margin: 0 10px;
+  }
+  

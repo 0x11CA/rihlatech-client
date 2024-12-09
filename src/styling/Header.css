@@ -1,0 +1,86 @@
+/* Navbar Styles */
+.navbar-dark {
+    background-color: #001d4f;
+    font-family: "Poppins", sans-serif;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute brand, links, and profile */
+    height: 60px; /* Adjust header height */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Navbar Brand */
+  .navbar-brand-container {
+    flex: 1; /* Ensure brand stays on the left */
+  }
+  
+  .navbar-brand-text {
+    font-family: "Bahianita", cursive; /* Custom font for RihlaTech */
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Center Section: Links */
+  .center-navbar-links {
+    display: flex;
+    justify-content: center; /* Center align the links */
+    align-items: center;
+    gap: 20px;
+    flex: 2; /* Center section takes more space */
+  }
+  
+  .center-navbar-links .nav-link {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  
+  .center-navbar-links .nav-link:hover {
+    color: #ffc107; /* Highlight color */
+    text-decoration: none;
+  }
+  
+  /* User Dropdown */
+  .user-dropdown-container {
+    padding: 0; /* Remove any padding */
+  margin: 0; /* Remove any margin */
+    flex: 1; /* Ensure user dropdown stays on the right */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .user-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .user-avatar {
+    width: 40px; /* Fixed width */
+    height: 40px; /* Fixed height */
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover; /* Maintain aspect ratio and fill */
+    border: 2px solid white; /* Optional: Add a white border for clarity */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Optional: Add shadow for style */
+  }
+  
+  
+  .user-info {
+    font-size: 12px;
+    text-align: left;
+    line-height: 1.2;
+    color: white;
+  }
+  
+  .user-info small {
+    font-size: 10px;
+    color: #d3d3d3; /* Gray for the role text */
+  }
+  

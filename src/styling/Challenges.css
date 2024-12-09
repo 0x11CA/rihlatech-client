@@ -1,0 +1,42 @@
+.challenges-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .challenges-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .table {
+    text-align: center;
+  }
+  
+  .table th, .table td {
+    vertical-align: middle;
+  }
+  .question-details-page {
+    padding: 20px;
+  }
+  
+  .question-details-page h1 {
+    color: #001d4f;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .question-details-page p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .table {
+    margin-top: 20px;
+  }
+  
+  .table th, .table td {
+    text-align: center;
+  }
+  

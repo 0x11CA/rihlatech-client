@@ -1,0 +1,258 @@
+/* Full-page layout */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #070d35; /* Dark blue background */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Central rectangle container */
+  .auth-box {
+    display: flex;
+    width: 100%;
+    max-width: 1100px; /* Fixed max width for the container */
+    height: 750px; /* Fixed height for consistency */
+    background-color: #070d35;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Left column for image and text */
+  .auth-left {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #1a1a4b; /* Slightly darker for contrast */
+  }
+  
+  .auth-left::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/ssd.jpg') no-repeat center center;
+    background-size: cover; /* Ensure the image scales properly */
+    filter: brightness(0.7); /* Darken the image for better readability */
+    z-index: 1;
+  }
+  
+  .auth-left-content {
+    position: relative;
+    z-index: 2; /* Ensure the text is above the image */
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+  
+  .auth-left-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .auth-left-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ddd;
+  }
+  
+  /* Right column for login form */
+  .auth-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #1a1a4b; /* Consistent with left column */
+    color: white;
+  }
+  
+  .auth-right h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ffc107;
+  }
+  
+  .auth-right p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #ddd;
+  }
+  
+  /* Form styles */
+  form {
+    width: 100%;
+    max-width: 400px; /* Fixed width for the form */
+  }
+  
+  form input {
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #666;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+  }
+  
+  form input::placeholder {
+    color: #aaa;
+  }
+  
+  form input:focus {
+    border-color: #ffc107;
+    outline: none;
+  }
+  
+  form button {
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffc107;
+    color: #292b3b;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  form button:hover {
+    background-color: #ffa000;
+  }
+  
+  /* Footer links */
+  .text-center {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #ddd;
+    text-align: center;
+  }
+  
+  .text-center a {
+    color: #ffc107;
+    text-decoration: none;
+  }
+  
+  .text-center a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive design for smaller devices */
+  
+  /* Very small devices (iPhone SE and similar) */
+  @media (max-width: 375px) {
+    .auth-box {
+      flex-direction: column; /* Stack columns vertically */
+      height: auto; /* Allow height to adjust naturally */
+    }
+  
+    .auth-left {
+      height: 200px; /* Adjust image height */
+    }
+  
+    .auth-left-content h1 {
+      font-size: 1.5rem; /* Adjust font size */
+    }
+  
+    .auth-left-content p {
+      font-size: 0.9rem; /* Adjust font size */
+    }
+  
+    .auth-right {
+      padding: 30px; /* Reduce padding */
+    }
+  
+    .auth-right h2 {
+      font-size: 1.8rem;
+    }
+  
+    form input {
+      font-size: 0.9rem;
+    }
+  
+    .text-center {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Small devices (phones) */
+  @media (max-width: 768px) {
+    .auth-box {
+      flex-direction: column; /* Stack columns vertically */
+      height: auto; /* Adjust height naturally */
+    }
+  
+    .auth-left {
+      height: 250px;
+    }
+  
+    .auth-left-content h1 {
+      font-size: 1.8rem;
+    }
+  
+    .auth-left-content p {
+      font-size: 1rem;
+    }
+  
+    .auth-right {
+      padding: 40px;
+    }
+  
+    form input {
+      font-size: 0.9rem;
+    }
+  
+    .text-center {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Medium devices (tablets) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .auth-box {
+      height: 700px;
+    }
+  
+    .auth-left-content h1 {
+      font-size: 2rem;
+    }
+  
+    .auth-right h2 {
+      font-size: 1.9rem;
+    }
+  }
+  /* Login Button */
+form button {
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffc107; /* Yellow button */
+    color: #292b3b; /* Dark text for contrast */
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  form button:hover {
+    background-color: #e6a800; /* Slightly darker yellow for hover */
+  }
+  .text-center .text-muted {
+    color: #fff !important; /* Make the text white */
+  }
+  
+  .text-center .text-muted:hover {
+    color: #ffc107 !important; /* Optional: Yellow on hover for better visibility */
+  }
+  
+  

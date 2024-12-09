@@ -1,0 +1,264 @@
+/* Full-page layout */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #1a1a4b; /* Dark blue background */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Central rectangle container */
+.signup-box {
+  display: flex;
+  flex-wrap: wrap; /* Ensures layout adjusts on smaller screens */
+  width: 100%;
+  max-width: 1100px; /* Max width for the rectangle */
+  height: 750px; /* Adjusted height to match design */
+  background-color: #070d35;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Left column for image and text */
+.signup-left {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  overflow: hidden;
+  background-color: #1a1a4b;
+}
+
+.signup-left::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:url('../assets/ssd.jpg') no-repeat center center;
+  background-size: cover;
+  filter: brightness(0.7); /* Darken the image for better readability */
+  z-index: 1;
+}
+
+.signup-left-content {
+  position: relative;
+  z-index: 2; /* Ensure text is above the image */
+  text-align: center;
+  color: white;
+  padding: 20px;
+  max-width: 80%; /* Prevent text from being too wide */
+}
+
+.signup-left-content h1 {
+  font-size: 2.5rem; /* Larger title font */
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.signup-left-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+
+/* Right column for the form */
+.signup-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #1a1a4b; /* Match the theme */
+  color: white;
+}
+
+.signup-right h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #ffc107; /* Yellow heading */
+}
+
+.signup-right p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #ddd;
+}
+
+/* Form styles */
+form {
+  width: 100%;
+  max-width: 400px; /* Fixed width for the form */
+}
+
+form input {
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #666;
+  background-color: #333;
+  color: white;
+  width: 100%;
+}
+
+form input::placeholder {
+  color: #aaa;
+}
+
+form input:focus {
+  border-color: #ffc107;
+  outline: none;
+}
+
+/* Password requirements */
+.password-requirements {
+  background-color: #1a1a4b; /* Matches form background */
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin-top: -5px;
+}
+
+.password-requirements p {
+  font-size: 0.95rem;
+  margin: 5px 0;
+}
+
+.password-requirements .valid {
+  color: #4caf50; /* Green for valid */
+}
+
+.password-requirements .invalid {
+  color: #f44336; /* Red for invalid */
+}
+
+/* Button styles */
+form button {
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffc107; /* Yellow button */
+  color: #292b3b;
+  cursor: pointer;
+  width: 100%;
+}
+
+form button:hover {
+  background-color: #e6a800; /* Slightly darker yellow for hover */
+}
+
+/* Footer text for login link */
+.footer-text {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #ddd;
+  text-align: center;
+}
+
+.footer-text a {
+  color: #ffc107; /* Yellow link */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
+
+/* Error messages */
+.error {
+  color: #f44336;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+
+/* Very small devices (iPhone SE and similar) */
+@media (max-width: 375px) {
+  .signup-box {
+    flex-direction: column; /* Stack columns vertically */
+    height: auto; /* Adjust height dynamically */
+  }
+
+  .signup-left {
+    height: 200px; /* Reduce image height */
+  }
+
+  .signup-left-content h1 {
+    font-size: 1.5rem; /* Adjust title size */
+  }
+
+  .signup-left-content p {
+    font-size: 0.9rem; /* Adjust text size */
+  }
+
+  .signup-right {
+    padding: 30px; /* Reduce padding */
+  }
+
+  form input {
+    font-size: 0.9rem;
+  }
+
+  .footer-text {
+    font-size: 0.8rem;
+  }
+}
+
+/* Small devices (phones) */
+@media (max-width: 768px) {
+  .signup-box {
+    flex-direction: column; /* Stack columns vertically */
+    height: auto;
+  }
+
+  .signup-left {
+    height: 250px; /* Adjust height for phones */
+  }
+
+  .signup-left-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .signup-left-content p {
+    font-size: 1rem;
+  }
+
+  .signup-right {
+    padding: 40px;
+  }
+
+  form input {
+    font-size: 0.9rem;
+  }
+
+  .footer-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .signup-box {
+    height: 700px;
+  }
+
+  .signup-left-content h1 {
+    font-size: 2rem;
+  }
+
+  .signup-right h2 {
+    font-size: 1.9rem;
+  }
+}

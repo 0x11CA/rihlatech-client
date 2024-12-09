@@ -1,0 +1,58 @@
+body {
+    background-color: #f8f9fa;
+  }
+  
+  .leaderboard-card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: white;
+  }
+  
+  .leaderboard-avatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid #ffcc00;
+  }
+  
+  .rank {
+    font-weight: bold;
+    color: #001d4f;
+  }
+  
+  .points {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  table {
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  thead {
+    background-color: #001d4f;
+    color: white;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #f8f9fa;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #e9ecef;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #001d4f;
+    font-weight: bold;
+  }
+  
+  .rounded-circle {
+    border: 2px solid #001d4f;
+  }
+  

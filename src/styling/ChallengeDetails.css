@@ -1,0 +1,38 @@
+.challenge-details-page {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background for readability */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .challenge-details-page h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #001d4f; /* Deep blue for the title */
+    margin-bottom: 20px;
+  }
+  
+  .challenge-details-page p {
+    font-size: 1rem;
+    color: #333; /* Dark gray for text */
+    line-height: 1.6; /* Better readability */
+    margin-bottom: 15px;
+  }
+  
+  .challenge-details-page pre {
+    background-color: #f0f0f0; /* Light gray background for code */
+    color: #000; /* Black text for code */
+    font-family: "Courier New", Courier, monospace; /* Monospaced font */
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto; /* Scrollable for long lines */
+    margin-bottom: 20px;
+    font-size: 0.95rem; /* Slightly smaller font for preformatted text */
+  }
+  
+  .challenge-details-page strong {
+    color: #001d4f; /* Deep blue for emphasis */
+  }
+  
+  

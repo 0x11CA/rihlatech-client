@@ -1,0 +1,155 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa; /* Light background for contrast */
+  }
+  
+  /* Container and Card */
+  .container {
+    margin-top: 50px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+  
+  .card-body {
+    padding: 40px; /* Adjust padding for better spacing */
+  }
+  
+  /* Text Centering */
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Profile Image */
+  .rounded-circle {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #ffc107; /* Yellow border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px auto; /* Center profile image */
+    display: block;
+  }
+  
+  /* Headings and Labels */
+  h2, h4 {
+    font-family: 'Poppins', sans-serif;
+    color: #001d4f; /* Dark blue */
+  }
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+  }
+  
+  label {
+    font-weight: 600;
+    color: #001d4f; /* Dark blue */
+    font-size: 1rem; /* Standardize label font size */
+  }
+  
+/* Buttons */
+button {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px; /* Uniform padding for all buttons */
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    width: 100%; /* Ensures buttons are the same width */
+  }
+  
+  button[type="submit"] {
+    background-color: #ffc107; /* Yellow */
+    border: none;
+    color: #001d4f; /* Dark blue */
+    margin-top: 20px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #e6b800; /* Darker yellow */
+    color: #ffffff;
+  }
+  
+  button.reset-password {
+    background-color: #dc3545; /* Red for reset password */
+    border: none;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  
+  button.reset-password:hover {
+    background-color: #c82333; /* Darker red */
+  }
+  
+  /* Ensure buttons have consistent spacing */
+  button + button {
+    margin-top: 10px; /* Add spacing between buttons */
+  }
+  
+  
+  /* Input Fields */
+  input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 12px; /* Slightly larger padding for better usability */
+    font-size: 1rem;
+  }
+  
+  input:focus {
+    border-color: #ffc107; /* Highlight yellow on focus */
+    box-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
+    outline: none;
+  }
+  
+  input[type="file"] {
+    border: none;
+    padding: 5px;
+  }
+  
+  /* Password Requirements */
+  .password-requirements {
+    font-size: 0.9rem;
+    margin-top: 15px;
+    background-color: #ffffff; /* White background for password requirements */
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .password-requirements p {
+    margin: 8px 0;
+    color: #d3d3d3; /* Default color for unvalidated criteria */
+  }
+  
+  .password-requirements p.text-success {
+    color: #28a745; /* Green when valid */
+  }
+  
+  /* Spinner Alignment */
+  .spinner {
+    margin-top: 50px;
+  }
+  
+  /* Form Centering */
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .card-body form {
+    margin-top: 30px; /* Add spacing between image and form */
+  }
+  
