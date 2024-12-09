@@ -62,28 +62,42 @@ const Header = () => {
         {role === "admin" ? (
           <>
             <NavItem>
-              <NavLink href="/adminmain">Home</NavLink>
+              <NavLink onClick={() => navigate("/adminmain")} style={{ cursor: "pointer" }}>
+                Home
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/dashboard">Dashboard</NavLink>
+              <NavLink onClick={() => navigate("/dashboard")} style={{ cursor: "pointer" }}>
+                Dashboard
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/leaderboard">Leaderboard</NavLink>
+              <NavLink onClick={() => navigate("/leaderboard")} style={{ cursor: "pointer" }}>
+                Leaderboard
+              </NavLink>
             </NavItem>
           </>
         ) : (
           <>
             <NavItem>
-              <NavLink href="/home">Home</NavLink>
+              <NavLink onClick={() => navigate("/home")} style={{ cursor: "pointer" }}>
+                Home
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/courses">Courses</NavLink>
+              <NavLink onClick={() => navigate("/courses")} style={{ cursor: "pointer" }}>
+                Courses
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/my-learning/questions">My Learning</NavLink>
+              <NavLink onClick={() => navigate("/my-learning/questions")} style={{ cursor: "pointer" }}>
+                My Learning
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/leaderboard">Leaderboard</NavLink>
+              <NavLink onClick={() => navigate("/leaderboard")} style={{ cursor: "pointer" }}>
+                Leaderboard
+              </NavLink>
             </NavItem>
           </>
         )}
@@ -92,15 +106,14 @@ const Header = () => {
       {/* Right Section: User Info */}
       <Dropdown isOpen={dropdownOpen} toggle={toggle} className="user-dropdown-container">
         <DropdownToggle className="user-dropdown" tag="div">
-        <img
-  src={
-    profileImage ||
-    "https://e7.pngegg.com/pngimages/178/595/png-clipart-user-profile-computer-icons-login-user-avatars-monochrome-black-thumbnail.png"
-  }
-  alt="User Avatar"
-  className="rounded-circle user-avatar"
-/>
-
+          <img
+            src={
+              profileImage ||
+              "https://e7.pngegg.com/pngimages/178/595/png-clipart-user-profile-computer-icons-login-user-avatars-monochrome-black-thumbnail.png"
+            }
+            alt="User Avatar"
+            className="rounded-circle user-avatar"
+          />
           <span className="user-info">
             Hi, {userName || "User"} {/* Display fetched name */}
             <br />
