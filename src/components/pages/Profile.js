@@ -198,23 +198,22 @@ const Profile = () => {
                 </FormGroup>
 
                 <Button
-  className="btn-action"
-  type="submit"
-  color="primary"
-  block
->
-  Update Profile
-</Button>
+                  className="btn-action"
+                  type="submit"
+                  color="primary"
+                  block
+                >
+                  Update Profile
+                </Button>
               </Form>
-              <hr />
               <Button
-  className="btn-action"
-  color="danger"
-  block
-  onClick={() => setShowPasswordFields(!showPasswordFields)}
->
-  Reset Password
-</Button>
+                className="btn-action"
+                color="danger"
+                block
+                onClick={() => setShowPasswordFields(!showPasswordFields)}
+              >
+                Reset Password
+              </Button>
 
               {showPasswordFields && (
                 <Form onSubmit={handleResetPassword} className="mt-3">
